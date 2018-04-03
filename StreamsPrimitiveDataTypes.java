@@ -17,7 +17,9 @@ public class StreamsPrimitiveDataTypes {
 			.ifPresent(System.out::println);
 		
 		// map doubles to ints // truncates the doubles
-		Stream.of(1.5, 2.3, 3.7).mapToInt(Double::intValue).forEach(System.out::println);
+		Stream.of(1.5, 2.3, 3.7)
+			.mapToInt(Double::intValue)
+			.forEach(System.out::println);
 	}
 
 }
