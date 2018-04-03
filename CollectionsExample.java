@@ -20,12 +20,17 @@ public class CollectionsExample {
 		
 		// use .collect to aggregate values
 		List<Book> books = Arrays.asList(book1, book2, book3);
-		int total = books.stream().collect(Collectors.summingInt(Book::getPages));
+		int total = books
+			.stream()
+			.collect(Collectors.summingInt(Book::getPages));
 		System.out.println(total);
 		
 		// use .collect to aggregate author first names into a list
 		// and .map to get the last name of the author
-		List<String> list = books.stream().map(Book::getAuthorFName).collect(Collectors.toList());
+		List<String> list = books
+			.stream()
+			.map(Book::getAuthorFName)
+			.collect(Collectors.toList());
 		System.out.println(list);
 		
 		// Create a list with duplicates
