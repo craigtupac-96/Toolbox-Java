@@ -27,7 +27,7 @@ public class StreamExample {
 		
 		// using a stream and a map operation to create a list of words in caps
 		List<String> collected = Stream.of("Java", " Rocks")
-				.map(String -> String.toUpperCase())
+			.map(String -> String.toUpperCase())
 			.collect(Collectors.toList());
 		System.out.println(collected.toString());
 		
