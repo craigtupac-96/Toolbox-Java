@@ -15,6 +15,10 @@ public class CreateNewFunctionalInterface {
 		System.out.println(difference.calc(5, 10));
 		System.out.println(divide.calc(12, 0));
 		System.out.println(multiply.calc(3, 5));
+		
+		// my own interface implementation
+		SimpleInterface simpObj = () -> System.out.println("Say something");
+		simpObj.doSomething();
 	}
 
 }
@@ -23,4 +27,10 @@ public class CreateNewFunctionalInterface {
 @FunctionalInterface
 interface Calculate{
 	int calc(int x, int y);
+}
+
+// My own simple functional interface
+@FunctionalInterface
+interface SimpleInterface{
+	public void doSomething();
 }
