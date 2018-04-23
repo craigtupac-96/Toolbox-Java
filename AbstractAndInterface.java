@@ -44,7 +44,6 @@ class Son extends Father implements IMother {
 	String grandfatherAbstractMethod() {
 		
 		return "Abstract Grandfather stuff";
-		
 	}
 	
 	// must provide concrete implementation of all methods from interface
@@ -52,7 +51,6 @@ class Son extends Father implements IMother {
 	public String motherInterfaceMethod() {
 		
 		return "Abstract Mother stuff";
-		
 	}
 	
 	public String sonMethod() {
