@@ -21,6 +21,9 @@ public class AbstractAndInterface {
 		theSon.nonAbstractMethodGrandfather();
 		
 		System.out.println("\nCombined family number: " + theSon.calculateFamilyNumber());
+		
+		// Abstract classes cannot be instantiated, but they can be subclassed
+		// Father f = new Father();   <-can't do this		
 	}
 
 }
