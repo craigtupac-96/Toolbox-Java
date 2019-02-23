@@ -3,7 +3,7 @@
  * Author: Craig Lawlor
  * C00184465
  */
-package algorithm;
+/*package algorithm;*/
 
 public class ArmstrongNumbers {
 
